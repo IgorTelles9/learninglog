@@ -149,8 +149,10 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     # Honra o cabeçalho 'X-Fowarded-Proto' para request.is_secure()
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FOWARDED_PROTO0', 'https')
 
-    # Cabeçalhos para permitir todos os hosts
-    ALLOWED_HOSTS = ['*']
+    # Permite que apenas o Heroku seja o host do projeto
+    ALLOWED_HOSTS = ['studies-logs.herokuapp.com']
+
+    DEBUG = False
 
     # Configuração de recursos estáticos
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
