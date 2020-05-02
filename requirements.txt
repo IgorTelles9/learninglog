@@ -1,14 +1,6 @@
 dj-database-url==0.5.0
-<<<<<<< HEAD
 Django==2.2.10
 django-bootstrap3==12.0.3
 gunicorn==20.0.4
 whitenoise==5.0.1
 psycopg2>=2.6.1
-=======
-Django==2.0
-django-bootstrap3==12.0.3
-gunicorn==20.0.4
-whitenoise==5.0.1
-psycopg2>=2.6.1
->>>>>>> d4ebf5e58038e5ef1af461e695871b59cda71b42

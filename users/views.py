@@ -24,7 +24,3 @@ def register (request):
     context = {'form': form}
     return render(request, 'users/register.html', context)
 
-def logout_view(request):
-    """ Faz logout do usuário. """
-    logout(request)
-    return HttpResponseRedirect(reverse('learning_logs:index'))

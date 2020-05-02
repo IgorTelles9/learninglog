@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 
 # My Settings
 LOGIN_URL = '/users/login/'
-
+LOGOUT_REDIRECT_URL = '/'
 # DJANGO-BOOTSTRAP3 CONFIGURATION 
 BOOTSTRAP3={
     'include_jquery': True,
