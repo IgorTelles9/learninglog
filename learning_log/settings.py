@@ -129,7 +129,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # My Settings
-LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL = '/users/login/'
 
 # DJANGO-BOOTSTRAP3 CONFIGURATION 
