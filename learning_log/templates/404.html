@@ -1,0 +1,16 @@
+{% extends "learning_logs/base.html" %}
+{% block header %}
+    <h2 class="text-center"> Opa! </h2>
+    
+{% endblock header %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <img class="img-responsive center-block" src="https://bit.ly/3bX1d59" alt="Cachorro confuso">
+    {% else %}
+        <img class="img-responsive center-block" src="https://bit.ly/3bZVgEn" alt="Gato pula e cai" >
+    {% endif %}
+    <h3 class="text-center"> O item que você solicitou não está disponível. </h3>
+
+{% endblock content %}
+

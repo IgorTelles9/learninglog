@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
 from .forms import TopicForm, EntryForm
@@ -54,7 +54,7 @@ def new_topic(request):
 @login_required
 def new_entry(request, topic_id):
     """ Acrescente uma nova entrada para um assunto em particular """
-    topic = Topic.objects.get(id=topic_id)
+    topic = get_object_or_404(Topic, id=topic_id)
 
     if request.method != 'POST':
         form = EntryForm()
